@@ -54,11 +54,20 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 corner_detail = 10
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1d2tg"]
-bg_color = Color(0.2538427, 0.25384277, 0.25384262, 1)
-border_width_top = 25
-border_color = Color(0.5283958, 0.52839607, 0.528396, 1)
-border_blend = true
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p6hru"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+shadow_size = 10
+shadow_offset = Vector2(-10, 6)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4lwh"]
 bg_color = Color(0, 0, 0, 1)
@@ -119,7 +128,7 @@ Button/styles/pressed = SubResource("StyleBoxFlat_f4upp")
 FileDialog/fonts/title_font = ExtResource("1_8ei7p")
 Label/fonts/font = ExtResource("1_8ei7p")
 Label/styles/normal = SubResource("StyleBoxFlat_t0vpx")
-Panel/styles/panel = SubResource("StyleBoxFlat_1d2tg")
+Panel/styles/panel = SubResource("StyleBoxFlat_p6hru")
 PanelContainer/styles/panel = null
 TextEdit/colors/background_color = Color(0, 0, 0, 0)
 TextEdit/font_sizes/font_size = 25
