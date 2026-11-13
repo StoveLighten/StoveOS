@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://hfnaf3syyddw"]
+
+[ext_resource type="Script" uid="uid://be7ev2hvsyev6" path="res://System Files/window.gd" id="1_y75ho"]
+[ext_resource type="Theme" uid="uid://bts5ut2ehb736" path="res://System Files/ui.tres" id="2_huuvb"]
+[ext_resource type="Script" uid="uid://brhtsskcoehax" path="res://file.gd" id="3_huuvb"]
+
+[node name="Window" type="Control" unique_id=1912003183]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -552.0
+offset_right = -960.0
+offset_bottom = -552.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y75ho")
+
+[node name="Window" type="Window" parent="." unique_id=1115787259]
+oversampling_override = 1.0
+title = "File View"
+initial_position = 1
+size = Vector2i(1000, 500)
+theme = ExtResource("2_huuvb")
+script = ExtResource("3_huuvb")
+
+[node name="ItemList" type="ItemList" parent="Window" unique_id=1481042913]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+select_mode = 1
+fixed_icon_size = Vector2i(10, 10)
+
+[connection signal="close_requested" from="Window" to="." method="_on_window_close_requested"]

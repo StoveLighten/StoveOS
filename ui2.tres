@@ -1,0 +1,54 @@
+[gd_resource type="Theme" format=3 uid="uid://bkxbvyyhg7xyj"]
+
+[ext_resource type="FontFile" uid="uid://ctvrwiauh35h7" path="res://DMMono-Regular.ttf" id="1_hgmxk"]
+[ext_resource type="FontFile" uid="uid://7uw7hjgorxam" path="res://Inter_28pt-Regular.ttf" id="2_1iqge"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1d2tg"]
+bg_color = Color(0.2538427, 0.25384277, 0.25384262, 1)
+border_width_top = 25
+border_color = Color(0.5283958, 0.52839607, 0.528396, 1)
+border_blend = true
+
+[sub_resource type="DPITexture" id="DPITexture_1iqge"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#fff\" fill-opacity=\".75\" d=\"m1 3 2-2 5 5 5-5 2 2-5 5 5 5-2 2-5-5-5 5-2-2 5-5z\"/></svg>
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mycd"]
+border_width_left = 5
+border_width_top = 50
+border_width_right = 5
+border_width_bottom = 25
+border_color = Color(1, 1, 1, 1)
+border_blend = true
+expand_margin_left = 15.0
+expand_margin_top = 30.0
+expand_margin_right = 15.0
+expand_margin_bottom = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i6sfk"]
+bg_color = Color(1, 1, 1, 0.74509805)
+border_width_top = 10
+border_width_right = 10
+border_color = Color(1, 1, 1, 0.74509805)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 10
+expand_margin_left = 10.0
+expand_margin_top = 35.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+shadow_size = 10
+shadow_offset = Vector2(-10, 6)
+
+[resource]
+Panel/styles/panel = SubResource("StyleBoxFlat_1d2tg")
+PanelContainer/styles/panel = null
+TextEdit/fonts/font = ExtResource("1_hgmxk")
+Window/font_sizes/title_font_size = 20
+Window/fonts/title_font = ExtResource("2_1iqge")
+Window/icons/close = SubResource("DPITexture_1iqge")
+Window/styles/embedded_border = SubResource("StyleBoxFlat_7mycd")
+Window/styles/embedded_unfocused_border = SubResource("StyleBoxFlat_i6sfk")

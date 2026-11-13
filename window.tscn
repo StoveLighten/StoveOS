@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bh4g10v1lw3u5"]
 
-[ext_resource type="Script" uid="uid://be7ev2hvsyev6" path="res://window.gd" id="1_hjewq"]
-[ext_resource type="Theme" uid="uid://bts5ut2ehb736" path="res://ui.tres" id="1_mvsta"]
+[ext_resource type="Script" uid="uid://be7ev2hvsyev6" path="res://System Files/window.gd" id="1_hjewq"]
+[ext_resource type="Theme" uid="uid://bts5ut2ehb736" path="res://System Files/ui.tres" id="1_mvsta"]
 
 [node name="Window" type="Control" unique_id=1912003183]
 layout_mode = 3
