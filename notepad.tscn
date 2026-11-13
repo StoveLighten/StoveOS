@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://be7ev2hvsyev6" path="res://System Files/window.gd" id="1_x53u3"]
 [ext_resource type="Theme" uid="uid://bts5ut2ehb736" path="res://System Files/ui.tres" id="2_eskqg"]
-[ext_resource type="Theme" uid="uid://bkxbvyyhg7xyj" path="res://ui2.tres" id="2_va51j"]
 [ext_resource type="Script" uid="uid://dhhw8uvj2h3kj" path="res://notepad.gd" id="3_eskqg"]
 
 [node name="Window" type="Control" unique_id=1912003183]
@@ -26,7 +25,7 @@ oversampling_override = 1.0
 title = "Notepad"
 initial_position = 1
 size = Vector2i(1000, 500)
-theme = ExtResource("2_va51j")
+theme = ExtResource("2_eskqg")
 script = ExtResource("3_eskqg")
 
 [node name="ColorRect" type="ColorRect" parent="Window" unique_id=828070818]
@@ -39,8 +38,7 @@ grow_vertical = 2
 [node name="TextEdit" type="TextEdit" parent="Window" unique_id=399747805]
 anchors_preset = -1
 anchor_right = 1.0
-anchor_bottom = 0.88400006
-offset_right = 4.0
+anchor_bottom = 0.85400003
 offset_bottom = -3.0517578e-05
 grow_horizontal = 2
 grow_vertical = 2
@@ -53,7 +51,7 @@ anchors_preset = -1
 anchor_top = 0.8880001
 anchor_right = 0.504
 anchor_bottom = 1.0
-offset_top = -3.0517578e-05
+offset_top = -22.00003
 offset_right = -5.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -78,13 +76,24 @@ anchor_top = 0.89000005
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -1.0
-offset_top = -2.0000305
+offset_top = -23.00003
 offset_right = 3.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "open
 "
+
+[node name="Label" type="Label" parent="Window" unique_id=974718310]
+anchors_preset = -1
+anchor_left = 0.84400004
+anchor_top = 0.776
+anchor_right = 1.0
+anchor_bottom = 0.84200007
+offset_left = 0.99993896
+offset_bottom = 3.9999695
+grow_horizontal = 2
+grow_vertical = 2
 
 [connection signal="close_requested" from="Window" to="." method="_on_window_close_requested"]
 [connection signal="pressed" from="Window/Button" to="Window" method="_on_button_pressed"]

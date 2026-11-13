@@ -11,7 +11,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	var texts = text.text
+	var words = texts.split(" ", false)
+	$Label.text = "Words: %d" % words.size()
 
 
 func _on_button_pressed() -> void:
