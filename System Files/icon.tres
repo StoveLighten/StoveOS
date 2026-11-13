@@ -1,0 +1,10 @@
+[gd_resource type="Theme" format=3 uid="uid://dun03dgxwr0kd"]
+
+[ext_resource type="FontFile" uid="uid://ctvrwiauh35h7" path="res://System Files/DMMono-Regular.ttf" id="1_52rmh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_82qpy"]
+
+[resource]
+Button/font_sizes/font_size = 16
+Button/fonts/font = ExtResource("1_52rmh")
+Button/styles/normal = SubResource("StyleBoxEmpty_82qpy")

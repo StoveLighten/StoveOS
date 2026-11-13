@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://sjak1ghjbttx"]
+
+[ext_resource type="Shader" uid="uid://octs4bysxwnd" path="res://System Files/background.gdshader" id="1_183uf"]
+[ext_resource type="Theme" uid="uid://bts5ut2ehb736" path="res://System Files/ui.tres" id="2_syd77"]
+[ext_resource type="Theme" uid="uid://dun03dgxwr0kd" path="res://System Files/icon.tres" id="3_7d88h"]
+[ext_resource type="Texture2D" uid="uid://b7882kbw2wucw" path="res://Icons/File View.png" id="4_mal6g"]
+[ext_resource type="Script" uid="uid://c6dqq4jsr3580" path="res://button.gd" id="5_2g2k4"]
+[ext_resource type="PackedScene" uid="uid://hfnaf3syyddw" path="res://file_system.tscn" id="6_3w0jb"]
+[ext_resource type="PackedScene" uid="uid://dds20issdtjjg" path="res://notepad.tscn" id="7_korcs"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nvm50"]
+shader = ExtResource("1_183uf")
+shader_parameter/bg_color = Color(0.03, 0.03, 0.07, 1)
+shader_parameter/line_color = Color(0.41, 0.41, 0.41, 1)
+shader_parameter/glow_color = Color(0, 0, 0, 1)
+shader_parameter/grid_size = 0.08000000310148
+shader_parameter/line_thickness = 0.002
+shader_parameter/scroll_speed = 0.014000000665
+shader_parameter/motion_strength = 0.007
+shader_parameter/motion_speed1 = 0.03
+shader_parameter/motion_speed2 = 0.015
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4nlj6"]
+load_path = "res://.godot/imported/Notepad.png-838dc502bbab1ef4de21dc685024b13d.ctex"
+
+[node name="Node2D" type="Node2D" unique_id=6927411]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1402344745]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=420703263]
+material = SubResource("ShaderMaterial_nvm50")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -962.0
+offset_top = -541.0
+offset_right = 989.0
+offset_bottom = 536.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09, 0.09, 0.09, 1)
+
+[node name="Panel" type="Panel" parent="ColorRect" unique_id=727306335]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 290.0
+offset_top = -126.0
+offset_right = -313.0
+offset_bottom = -29.32727
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2_syd77")
+
+[node name="Button" type="Button" parent="." unique_id=1814788761]
+offset_left = -806.0
+offset_top = 12.0
+offset_right = -626.0
+offset_bottom = 162.0
+theme = ExtResource("3_7d88h")
+text = "File System"
+icon = ExtResource("4_mal6g")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+script = ExtResource("5_2g2k4")
+app = ExtResource("6_3w0jb")
+
+[node name="Button3" type="Button" parent="." unique_id=1665898712]
+offset_left = -805.0
+offset_top = -170.0
+offset_right = -705.0
+offset_bottom = -20.0
+theme = ExtResource("3_7d88h")
+text = "Notepad"
+icon = SubResource("CompressedTexture2D_4nlj6")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+script = ExtResource("5_2g2k4")
+app = ExtResource("7_korcs")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1055424334]
+
+[node name="Button4" type="Button" parent="." unique_id=2057710346]
+offset_left = -641.0
+offset_top = 421.0
+offset_right = -581.0
+offset_bottom = 496.0
+theme = ExtResource("3_7d88h")
+icon = SubResource("CompressedTexture2D_4nlj6")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+script = ExtResource("5_2g2k4")
+app = ExtResource("7_korcs")
+
+[node name="Button2" type="Button" parent="." unique_id=587463792]
+offset_left = -568.0
+offset_top = 420.0
+offset_right = -450.0
+offset_bottom = 502.0
+theme = ExtResource("3_7d88h")
+icon = ExtResource("4_mal6g")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+script = ExtResource("5_2g2k4")
+app = ExtResource("6_3w0jb")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button3" to="Button3" method="_on_pressed"]
+[connection signal="pressed" from="Button4" to="Button4" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]

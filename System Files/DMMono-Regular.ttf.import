@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://ctvrwiauh35h7"
-path="res://.godot/imported/DMMono-Regular.ttf-11293124236c530bf146d9f5cf9abae8.fontdata"
+path="res://.godot/imported/DMMono-Regular.ttf-c9cdc83286f80257b3d1f51adda58579.fontdata"
 
 [deps]
 
-source_file="res://DMMono-Regular.ttf"
-dest_files=["res://.godot/imported/DMMono-Regular.ttf-11293124236c530bf146d9f5cf9abae8.fontdata"]
+source_file="res://System Files/DMMono-Regular.ttf"
+dest_files=["res://.godot/imported/DMMono-Regular.ttf-c9cdc83286f80257b3d1f51adda58579.fontdata"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://bkxbvyyhg7xyj"]
 
-[ext_resource type="FontFile" uid="uid://ctvrwiauh35h7" path="res://DMMono-Regular.ttf" id="1_hgmxk"]
+[ext_resource type="FontFile" uid="uid://ctvrwiauh35h7" path="res://System Files/DMMono-Regular.ttf" id="1_hgmxk"]
 [ext_resource type="FontFile" uid="uid://7uw7hjgorxam" path="res://Inter_28pt-Regular.ttf" id="2_1iqge"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1d2tg"]
